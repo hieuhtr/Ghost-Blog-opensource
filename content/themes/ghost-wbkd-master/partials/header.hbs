@@ -1,0 +1,27 @@
+{{! The big featured header }}
+<header id="header">
+    <nav class="header-nav" {{#if @blog.cover}}style="background-image:url({{@blog.cover}}){{/if}}">
+      
+      <div class="blog-title">
+        <a href="{{@blog.url}}">{{@blog.title}}</a>
+        <br>Javascript
+        <br>Windows Phone
+        <br>Web technology
+      </div>
+        
+      </div>
+
+      <!--Change this to customize the navigation-->
+      <div class="taglist-wrapper clearfix">
+        <ul id="taglist" class="taglist">
+            <li><a href="{{@blog.url}}">Home</a></li>
+            <li><a href="/tag/csharp-wp">C# Windows phone</a></li>
+            <li><a href="/tag/visual-studio">visual studio</a></li>
+            <li><a href="/tag/craftsman">craftsman</a></li>
+            <li><a href="/tag/javascript">javascript</a></li>
+            <li><a href="/tag/writing-contest">writing contest</a></li>
+        </ul>
+      </div>
+    </nav>
+
+</header>
